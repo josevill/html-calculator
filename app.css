@@ -1,0 +1,116 @@
+* {
+  margin 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold 14px Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff 20%, #ccc);
+  background-size: cover;
+}
+
+.calculator {
+  width: 325px;
+  height: auto;
+
+  margin: 150px auto;
+  padding: 20px 20px 9px;
+
+  background: linear-gradient(#9dd2ea, #8bceec);
+  border-radius: 5px;
+  box-shadow: 0 4px #009de4;
+}
+
+/* Top section*/
+.top span .clear {
+  float: left;
+}
+.top .screen {
+  height: 40px;
+  width: 212px;
+  float: right;
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+  box-shadow: inset 0 4px rgba(0,0,0,0.1);
+}
+
+/* Cls float */
+.keys,
+.top {
+  overflow: hidden;
+}
+
+/* Keys n General stuff*/
+.keys span,
+.top span.clear {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  width: 66px;
+  height: 38px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+  margin: 0 7px 11px 0;
+  /* Centering numbers, operators */
+  line-height: 38px;
+  text-align: center;
+  /* You won't break my stuff*/
+  user-select: none;
+  /* Fancy transition*/
+  transition: 0.2s all ease;
+}
+
+/* Operators n Result buttons styling */
+.keys span.operator {
+  background: #FFF0F5;
+  margin-right: 0;
+}
+.keys span.eval {
+  background: #f1ff92;
+  box-shadow: 0 4px #9da853;
+  color: #888e5f;
+}
+.top span.clear {
+  background: #ff9fa8;
+  box-shadow: 0 4px #ff7c87;
+  color: #fff;
+}
+
+/* Eye candy */
+
+.keys span:hover {
+  background: #9c89f6;
+  box-shadow: 0 4px #6b54d3;
+  color: #fff;
+}
+.keys span.eval:hover {
+  background: #abb850;
+  box-shadow: 0 4px #717a33;
+  color: #fff;
+}
+.top span.clear:hover {
+  background: #f68991;
+  box-shadow: 0 4px #d3545d;
+  color: #fff;
+}
+
+/* Activation */
+
+.keys span:active {
+  top: 4px;
+  box-shadow: 0 0 #6b54d3;
+  color: #fff;
+}
+.keys span.eval:active {
+  box-shadow: 0 0 #717a33;
+  color: #fff;
+}
+.top span.clear:active {
+  top: 4px;
+  box-shadow: 0 0 #d3545d;
+  color: #fff;
+}
